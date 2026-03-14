@@ -7,11 +7,11 @@
   Using server name or FQDN combined with secret from file or string parameter.
 
  .EXAMPLE
-   # Simple url creation with secret file in current folder
+   # Simple url creation using string parameter as secret.
    New-AuthUrl -Server "lansweeper.domain.com" -Secret "1234"
 
  .EXAMPLE
-   # Manual url creation using string parameter for secret
+   # Manual url creation with secret file in current folder.
    New-AuthUrl -Server "lansweeper.domain.com" -SecretPath "C:\.secret"
 #>
 
