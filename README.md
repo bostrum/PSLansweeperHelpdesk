@@ -1,5 +1,5 @@
 # Introduction
-PowerShell module for Lansweeper Helpdesk ticket system. Provides functions for fetching data from tickets, creating or editing tickets, adding notes or searching for tickets. Can be used for different integrations from and to other systems. Automated reminders, SMS-notifications on high priority tickets, automated tickets from monitoring, third-strike closing, ticket reporting, finding similarities between new and old tickets.. and more!
+PowerShell module for Lansweeper Helpdesk ticket system. Provides functions for fetching data from tickets, creating or editing tickets, adding notes or searching for tickets. Can be used for different integrations from and to other systems. Automated reminders, notifications on high priority tickets, automated tickets from monitoring systems, third-strike closing, ticket reports, finding similarities between new and old tickets, adding solution suggestions in ticket notes.. and more!
 
 Note: This is not an official or supported Lansweeper module.
 
