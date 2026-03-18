@@ -22,7 +22,7 @@ function Edit-LSTicketCustomField {
     )
     
     # Checking value type used
-    $Asset = if($PSCmdlet.ParameterSetName -eq 'Value') {
+    $FieldValue = if($PSCmdlet.ParameterSetName -eq 'Value') {
         "CustomFieldValue=$CustomFieldValue"
     } elseif($PSCmdlet.ParameterSetName -eq 'Values') {
         "CustomFieldValues=$CustomFieldValues"
@@ -31,7 +31,7 @@ function Edit-LSTicketCustomField {
     }
     
     # API call to edit custom field
-    $Url = ($Url + "action=EditTicketCustomField&" + "TicketID=$TicketID&" + "CustomFieldName=$CustomFieldName&" + $Asset) 
+    $Url = ($Url + "action=EditTicketCustomField&" + "TicketID=$TicketID&" + "CustomFieldName=$CustomFieldName&" + $FieldValue) 
     $Request = Invoke-WebRequest -Uri $Url -UseBasicParsing
     
     # Checking response
