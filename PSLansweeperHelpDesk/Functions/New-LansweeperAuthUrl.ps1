@@ -1,22 +1,20 @@
-<#
- .SYNOPSIS
-  Lansweeper URL creation.
-
- .DESCRIPTION
-  Creates URL used for Lansweeper Help Desk API calls.
-  Using server name or FQDN combined with secret from file or string parameter.
-
- .EXAMPLE
-   # Simple url creation using string parameter as secret.
-   New-AuthUrl -Server "lansweeper.domain.com" -Secret "1234"
-
- .EXAMPLE
-   # Manual url creation with secret file in current folder.
-   New-AuthUrl -Server "lansweeper.domain.com" -SecretPath "C:\.secret"
-#>
-
 function New-LansweeperAuthUrl {
-
+    <#
+        .SYNOPSIS
+        Lansweeper URL creation.
+        
+        .DESCRIPTION
+        Creates URL used for Lansweeper Help Desk API calls.
+        Using server name or FQDN combined with secret from file or string parameter.
+        
+        .EXAMPLE
+        # Simple url creation using string parameter as secret.
+        New-AuthUrl -Server "lansweeper.domain.com" -Secret "1234"
+        
+        .EXAMPLE
+        # Manual url creation with secret file in current folder.
+        New-AuthUrl -Server "lansweeper.domain.com" -SecretPath "C:\.secret"
+    #>
     Param (
         [Parameter(Mandatory=$true)]
         [String]$Server,
