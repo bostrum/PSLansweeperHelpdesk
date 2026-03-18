@@ -1,6 +1,7 @@
+# PSLansweeperHelpdesk
 [![PowerShell Gallery - PowerShellGet](https://img.shields.io/badge/PowerShell_Gallery-1.0.0-blue)](https://www.powershellgallery.com/packages/PSLansweeperHelpDesk)
 
-# Introduction
+## Introduction
 PowerShell module for Lansweeper Helpdesk ticket system. Provides functions for fetching data from tickets, creating or editing tickets, adding notes or searching for tickets. Can be used for different integrations from and to other systems. Automated reminders, notifications on high priority tickets, automated tickets from monitoring systems, third-strike closing, ticket reports, finding similarities between new and old tickets, adding solution suggestions in ticket notes.. and more!
 
 Note: This is not an official or supported Lansweeper module.
