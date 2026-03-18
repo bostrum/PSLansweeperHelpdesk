@@ -22,3 +22,14 @@ $SecretUrl = New-LansweeperAuthUrl -Server "lansweeper.yourdomain.com" -SecretPa
 # or
 $SecretUrl = New-LansweeperAuthUrl -Server "lansweeper.yourdomain.com" -Secret "1234-12-12-12-1234"
 ```
+
+Creating a new ticket, checking if succeeded, then closing and fetching ticket state to confirm.
+```powershell
+$Ticket = Add-LSTicket -Url $SecretUrl -Subject "Test" -Description "This is a test" -Email "example@domain.com"
+
+if($Ticket.Success) {
+    Edit-LSTicket -Url $SecretUrl -TicketId $Ticket.TicketId -State "Closed"
+
+    (Get-LSTicket -Url $SecretUrl -TicketID $Ticket.TicketId).State
+}
+```
