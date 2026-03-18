@@ -18,7 +18,7 @@ function Search-LSTickets {
         [String]$Type
     )
 
-     # Base parameters for url
+    # Base parameters for url
     $params = @{
         action   = 'SearchTickets'
     }
