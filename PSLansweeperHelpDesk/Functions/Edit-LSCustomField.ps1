@@ -1,5 +1,5 @@
 
-function Edit-LSTicketCustomField {
+function Edit-LSCustomField {
     
     Param (
         [Parameter(Mandatory=$true)]
