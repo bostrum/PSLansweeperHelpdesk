@@ -52,7 +52,7 @@ function Search-LSTickets {
     if(-not (($Request.Content | ConvertFrom-Json).Success)) {
         Write-Error "Search was not successful."
         return $Request
+    } else {
+        return ($Request.Content | ConvertFrom-Json)
     }
-
-    return ($Request.Content | ConvertFrom-Json)
 }
