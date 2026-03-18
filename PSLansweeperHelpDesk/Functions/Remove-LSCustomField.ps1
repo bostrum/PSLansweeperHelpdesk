@@ -1,5 +1,5 @@
 
-function Remove-LSTicketCustomField {
+function Remove-LSCustomField {
     
     Param (
         [Parameter(Mandatory=$true)]
