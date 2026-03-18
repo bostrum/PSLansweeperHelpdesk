@@ -5,7 +5,21 @@
     Author            = "Felix Boström"
     CompanyName       = ""
     Copyright         = ""
-    FunctionsToExport = @("Add-LSAsset", "Add-LSNote", "Add-LSTicket", "Edit-LSCustomField", "Edit-LSTicket", "Get-LSAssets", "Get-LSNotes", "Get-LSTicket", "New-LansweeperAuthUrl", "Remove-LSAsset", "Remove-LSCustomField", "Search-LSTickets", "Search-LSUsers")
+    FunctionsToExport = @(
+        "Add-LSAsset",
+        "Add-LSNote",
+        "Add-LSTicket",
+        "Edit-LSCustomField",
+        "Edit-LSTicket",
+        "Get-LSAssets",
+        "Get-LSNotes",
+        "Get-LSTicket",
+        "New-LansweeperAuthUrl",
+        "Remove-LSAsset",
+        "Remove-LSCustomField",
+        "Search-LSTickets",
+        "Search-LSUsers"
+    )
     CmdletsToExport   = @()
     VariablesToExport = @()
     AliasesToExport   = @()
