@@ -24,7 +24,6 @@ function Add-LSAsset {
     
     # API call to add asset to ticket
     $Url = ($Url + "action=AddAsset&" + "TicketID=$TicketID&" + $Asset) 
-    write-host $url -f yellow
     $Request = Invoke-WebRequest -Uri $Url -UseBasicParsing
     
     # Checking response
